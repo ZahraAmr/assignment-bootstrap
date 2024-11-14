@@ -1,4 +1,86 @@
 body {
   min-height: 100vh;
   min-height: -webkit-fill-available;
+  font-family: "Mulish", sans-serif;
+  background-color: #f7f8fc;
+  color: #252733;
+}
+
+.sidebar {
+  background-color: #1a1c23;
+  color: #9fa2b4;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 255px;
+}
+
+.sidebar .nav-link {
+  color: #9fa2b4;
+  padding: 18px 24px;
+  font-size: 16px;
+}
+
+.sidebar .nav-link.active {
+  color: #ffffff;
+  background-color: rgba(55, 81, 255, 0.1);
+  border-left: 3px solid #3751ff;
+}
+
+.sidebar .nav-link:hover {
+  color: #ffffff;
+  background-color: rgba(55, 81, 255, 0.05);
+}
+
+.main-content {
+  margin-left: 255px;
+}
+
+.trends-chart-container {
+  height: 380px;
+}
+
+.ticket-item,
+.task-item {
+  padding: 18px 0;
+  border-bottom: 1px solid #dfe0eb;
+}
+.ticket-item:last-child,
+.task-item:last-child {
+  border-bottom: none;
+}
+.ticket-name,
+.task-name {
+  color: #252733;
+  font-size: 14px;
+  font-weight: 600;
+}
+.ticket-number {
+  color: #9fa2b4;
+  font-size: 14px;
+}
+.task-badge {
+  padding: 5px 12px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: bold;
+}
+.badge-urgent {
+  background: #fec400;
+  color: #ffffff;
+}
+.badge-new {
+  background: #29cc97;
+  color: #ffffff;
+}
+.badge-default {
+  background: #f0f1f7;
+  color: #9fa2b4;
+}
+
+@media (max-width: 992px) {
+  .main-content {
+    margin-left: 0;
+  }
 }
